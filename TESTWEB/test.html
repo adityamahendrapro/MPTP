@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ThingSpeak Integration</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>ThingSpeak Integration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="data-container">
+        <h1>ThingSpeak Data Interaction</h1>
+        <button onclick="writeData()">Write Data</button>
+        <button onclick="readData()">Read Data</button>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Date</th>
+                    <th>Temperature (°C)</th>
+                    <th>Humidity (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data rows will be added here dynamically -->
+            </tbody>
+        </table>
+        <div id="chart-container" style="position: relative; height:40vh; width:80vw">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div id="response"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="test.js"></script> <!-- Pastikan JavaScript di sini -->
+    
+    <iframe width="450" height="260" style="border: none;" src="https://thingspeak.com/channels/2545003/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+    <iframe width="450" height="260" style="border: none;" src="https://thingspeak.com/channels/2545003/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+    <div id="chart-container" style="position: relative; height:40vh; width:80vw">
+        <canvas id="myChart"></canvas>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</html>
